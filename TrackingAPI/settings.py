@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 from pathlib import Path
 import django_heroku
 import os
-import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,9 +26,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 SECRET_KEY = 'django-insecure-cu%jna@w%j=uupv1&$jnm=^+3fdi_yuml!b+h2ydt^g-*66z2+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['trackingapi.onrender.com']
+ALLOWED_HOSTS = ['TrackingAPI.onrender.com']
 
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
